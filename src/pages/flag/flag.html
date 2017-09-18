@@ -1,0 +1,69 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>新建Flag</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Navy
+    </ion-card-header>
+    <ion-card-content>
+        {{getX()}}-{{getY()}}
+    </ion-card-content>
+
+  </ion-card>
+  <ion-list>
+
+    <ion-item>
+      <ion-label> Flag </ion-label>
+      <ion-select>
+        <ion-option>篮球</ion-option>
+        <ion-option>自习</ion-option>
+        <ion-option>吃饭</ion-option>
+        <ion-option>看电影</ion-option>
+        <ion-option>随意</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label> 地点</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>参与人数</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label> 活动内容</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>活动日期</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="time.date"></ion-datetime>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>开始时间</ion-label>
+      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="time.time"></ion-datetime>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="primary" block>
+      Flag
+    </button>
+  </div>
+
+
+
+
+</ion-content>

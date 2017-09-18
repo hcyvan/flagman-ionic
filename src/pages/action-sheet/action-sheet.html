@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ActionSheetPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ActionSheet</ion-title>
+  </ion-navbar>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      Left Icon Button
+      <button ion-button outline item-end icon-left>
+        <ion-icon name="star"></ion-icon>
+        Left Icon
+      </button>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-grid>
+    <ion-row>
+      <button ion-button (click)="openActionSheet()">ActionSheet</button>
+    </ion-row>
+    <ion-row>
+      <button ion-button (click)="openAlert()">Alert</button>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item>
+    <ion-icon name="logo-twitter" item-start></ion-icon>
+    Followers
+    <ion-badge item-end>260k</ion-badge>
+  </ion-item>
+
+
+
+</ion-content>
